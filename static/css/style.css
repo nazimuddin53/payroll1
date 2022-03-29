@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    
+}
+.clear{
+    clear:both;
+    overflow:hidden;
+}
+body{
+    width:99.9%;
+    height:auto;
+    margin: 0 auto;
+    background-color: #d0ffd0;
+    /* overflow-y:hidden; */
+    overflow-x: hidden;
+}
+
+/* header icon */
+.header-section h1 span{
+    margin-right: 38px;
+    width: 85px;
+    border-radius: 68px 72px;
+    font-size: 86px;
+    color: gold;
+    box-shadow: 0px 0px 1px 4px rgb(255, 196, 0);
+ 
+}
+.header-section h1{
+    padding: 0px;
+    margin-top: 1px;
+    font-size: 100px;
+    color: green;
+    padding-bottom: -18px;
+    font-family: Arial;
+}
+.header-section h1 small{
+    font-size: 50px;
+    color: black;    
+}
+/* home page box */
+
+.contain{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.contain .box_1{
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    float: left;
+    display: flexbox;
+    background-image: linear-gradient(green 89%, white 103%);
+    overflow: hidden;
+    color: white;
+    
+}
+.contain .box_1 h1{
+    overflow: hidden;
+    border-bottom: 2px solid white;
+}
+.contain .box_1 b{
+    font-size:75px;
+
+
+}
+/* contact page */
+
+/*-----------------------------------------------*/
+/* for desktop */
+@media (min-width:991px) {
+    
+.header-section{
+    width: 100%;
+    height: auto;
+    border: 1px solid green;
+    
+}
+.body-section{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(0, 55, 128);
+
+}
+/* ------------------------------------------ */
+
+/* start menu design  */
+.menu{
+    width: 200px;
+    height: 100%;
+    float: left;
+    border: 1px solid green;
+    background-color: transparent;
+}
+.menu ul{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+}
+.menu ul li{
+    margin-top: 2px;
+    padding: 7px;
+    margin-left: -34px;
+    width: 200px;
+    border: 2px solid green;
+}
+.menu ul li a{
+
+    text-decoration: none;
+    font-size: 22px;
+    color: #085308;
+}
+.menu ul li:hover {
+    background-color: #085308;
+    cursor: pointer;
+}
+.menu ul li:hover a{
+  
+    color: white;
+    border-color: white;
+}
+/* end menu design  */
+/* ------------------------------------------ */
+ 
+/* start menu design  */
+
+.mainbody{
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+    display: block;
+    background-color: transparent;
+}
+.container{
+    padding: 0px;
+}
+#page_title_bar{
+    background-color: #085308;
+    height: 45px;
+    width: 100%;
+    overflow: visible;
+}
+#page_title_bar a{
+    float: left;
+    font-size: 32px;
+    color: white;
+    margin-left: 14px
+}
+#page_title_bar> a> span{
+    font-size: 32px;
+}
+#page_title{
+    
+    color: white;
+    font-size: 28px;
+    background-color: #085308;
+    overflow: hidden;
+}
+/*   employee report table */
+.table{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(68, 0, 0, 0.979);
+}
+/* end menu design  */
+/* ------------------------------------------ */
+.footer-section{
+    margin-top: 7px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid green;
+    background: rgb(7, 7, 48);
+}
+.contain-header{
+    color: rgb(209, 206, 206);
+}
+.contain-header h1{
+    width: 342px;
+    padding: 5px;
+    margin-left: 6%;
+    font-size: 32px;
+}
+
+.footer_box{
+    width: 300px;
+    height: auto;
+    padding: 0px;
+    margin-left: 2%;
+    display: inline-block;
+    
+}
+
+.footer-section li{
+    list-style: none;
+    padding: 2px;
+    margin-left: 7px;
+
+}
+.footer-section li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.footer-section p{
+    margin-top: 23px;
+    color: rgb(151, 145, 145);
+    font-size: 13px;
+}
+/*-----------------------------------------------*/
+/* for ipad 
+@media (max-width:990px) {
+    .header-section{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(145, 151, 145);
+    background-color:#2c412c;
+
+}
+.body-section{
+    width: 100%;
+    height: auto;
+    border: 1px solid green;
+
+}
+.footer-section{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid green;
+}
+/*-----------------------------------------------*/
+/* for modile 
+@media (max-width:498px) {
+
+    .header-section{
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(170, 190, 170);
+        background-color: #fcfcfc;
+    }
+    .body-section{
+        width: 100%;
+        height: 100px;
+        border: 1px solid rgb(56, 65, 56);
+        background-color: #f8e1e1;
+    }
+    .footer-section{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border: 1px solid green;
+    }
+}
+}
+/*----------------------------------------------*/
+}

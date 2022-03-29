@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block body %} 
+
+
+<div class="mainsection">
+<div id="block-1" style="background-image: url({% static 'images/background.jpg' %});"><div class="contner">
+    <div class="text">
+<!-- <h1>Welcome To Our Website</h1> -->
+<h1>Payroll Services for Small Businesses</h1>
+<p>
+    Our payroll technology and 24/7 service platform makes it simple to:
+    <b class="li">Run payroll online</b>
+    <b class="li">Automatically calculate, pay, and file taxes</b>
+    <b class="li">Allow your employees to initiate self-service actions</b>
+</p>
+<button type="menu"><a href="{% url 'company:company_register' %}">Join Now</a></button>
+</div>
+</div></div>
+<div id="block-2"><div class="contner">
+<h1>What You Get with Paychex Payroll Services for Small Businesses</h1>
+<ul>
+<li>Flexible payroll processing online from desktop and mobile, or you can call your payroll specialist</li>
+<li>Ability to pay different types of workers – salaried, hourly, contract</li>
+<li>Automatic payroll tax administration</li>
+<li>Payroll dashboard with configurable views</li>
+<li>New-hire reporting to government agencies</li>
+<li>Online employee self-service</li>
+</ul>
+<ol >
+<li>Direct deposit, paycards, paper checks, online tip sharing, and on-demand access to earned wages</li>
+<li>Free mobile app for you and your employees</li>
+<li>HR analytics and events calendar</li>
+<li>Labor compliance poster kit</li>
+<li>Garnishment payments</li>
+<li>Robust reporting and analytics for insights into your payroll and HR data</li>
+<li>24/7 customer service and technical support</li>
+
+</ol>
+</div></div>
+<div id="block-3"><div class="contner"></div></div>
+<div id="block-4"><div class="contner"></div></div>
+<div id="block-5"><div class="contner"></div></div>
+
+</div>
+
+
+{% endblock %}

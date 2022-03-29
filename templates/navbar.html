@@ -1,0 +1,30 @@
+{% block navbar %}
+<div class="naigation clear">
+<div class="navimenu">
+    <div class="unouder colam">
+        <Ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Our Serves</a></li>
+            <li><a href="#">Our Patnar</a></li>
+            <li><a href="{% url 'company:contact' %}">Contact Us</a></li>
+            <li><a href="#">We Provide sirves</a></li>
+        </Ul>
+    </div>
+    <div class="ouder colam">
+        <ol >
+            {% if user.is_authenticated %}
+            <li>
+                <a href="{% url 'company:company_home' %}"> {{user.username}}</a>/ 
+            <a href="{% url 'company:logout' %}">LogOut</a>
+            </li>
+        
+            {%else%}
+                    <li><a href="{% url 'company:company_login' %}">Sign In</a></li>
+            {%endif%}
+        </ol>
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,102 @@
+.login_form{
+    width: 500px;
+    height: auto;
+    margin-left: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.login_form form{
+    padding: 10px 10px 10px 10px;
+}
+input {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+/* >>>>>>>>>> add employee form <<<<<<<*/
+#employee{
+    padding: 10px;
+}
+#employee form{
+    padding: 10px;
+}
+#employee input{
+    width: 400px;
+    display: inline;
+    padding: 12px;
+    margin-top: 15px;
+
+    
+    
+}
+#employee .input{
+    display: inline-block;
+    margin: 12px;
+    width: 400px
+}
+#employee .input b{
+    float: left;
+    
+}
+/* contact page */
+.contact{
+    padding: 8px;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+}
+.c-box{
+    display: inline-block;
+}
+
+.contact_box{
+    width: 350px;
+    float: left;
+    padding: 10px;
+    margin-left: 0%;
+   
+}
+.contact_head{
+    margin-left: 4%;
+     height: 160px;
+    margin-top: 12%
+
+}
+.contact_head h1{
+    font-size: 32px;
+
+}
+.contact_head p{
+    font-size: 25px;
+}
+.contact_box> .contact{
+    list-style: none;
+    padding: 10px;
+
+}
+.contact_box> .contact >li>span{
+    padding: 5px;
+    color: navy;
+    margin: 5px;
+}
+.contact-form{
+    width: 600px;
+    float: right;
+    margin-right: 0%;
+}
+.contact-form input{
+    width: 600px;
+
+}
+#Send{
+    width: 200px;
+    background-color: green;
+    color: white;
+    font-size: large;
+}

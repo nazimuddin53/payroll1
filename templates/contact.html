@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block body%}
+<div class="contact">
+<div class="contact_box c-box">
+    <div class="contact_head">
+        <h1>Reach out to us</h1>
+        <p>We would love to hear from you</p>
+    </div>
+    <div class="contact">
+        <li><span class="material-icons">my_location</span><b>District Education Office Road, Magura </b></li>
+        <li><span  class="material-icons">call</span><a href="tel:+880123465780">+880123465780</a></li>
+        <li><span  class="material-icons">email</span><a href="mailto:payroll5398@gmail.com">payroll5398@gmail.com</a></li>
+    </div>
+</div>
+
+<form action="" method="post" class="contact-form c-box">
+    First Name : 
+    <div class="c-in-box">{{contact_form.first_name}}</div>
+    Last Name : 
+    <div class="c-in-box">{{contact_form.last_name}}</div>
+    Urls : 
+    <div class="c-in-box">{{contact_form.urls}}</div>
+    Mobile : 
+    <div class="c-in-box">{{contact_form.mobile}}</div>
+    Email : 
+    <div class="c-in-box">{{contact_form.email}}</div>
+    Message : 
+    <div class="c-in-box">{{contact_form.message}}</div>
+
+    <input type="submit" name="" id="Send" value="Send">
+</form>
+</div>
+{% endblock %}

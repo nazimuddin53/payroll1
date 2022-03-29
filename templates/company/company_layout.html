@@ -1,0 +1,45 @@
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">   
+    <link rel="stylesheet" href="{% static 'css/login_form.css' %}">
+    <title>{{title}}</title>
+</head>
+<body>
+
+<section class="header-section">
+    <center><h1><span class="material-icons">
+        paid</span>P<small>AYROLL</small> S<small>YSTEM</small></h1></center>
+</section>
+<section class="body-section">
+    <div class="menu">
+        <center><ul>
+            <li><a href="{% url 'index' %}">HOME</a></li>
+            <!-- <li><a href="#">ADD CLASS</a></li> -->
+            <li><a href="{% url 'company:add_employee' %}">ADD Employee</a></li>
+            <li><a href="{% url 'company:employee_report' %}">Employee Report</a></li>
+            <li><a href="#">Leave</a></li>
+            <li><a href="#">Salary</a></li>
+            <li><a href="#">Salary Report</a></li>
+            <li><a href="#">Year wise Report</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="{% url 'company:change_password' %}">Change Password</a></li>
+            <li><a href="{% url 'company:logout' %}">LogOut</a></li>
+        </ul></center>
+    </div>
+    <div class="mainbody">
+        <center><P id="page_title">{{title}}</P></center>
+        <div class="container">
+            {% block body %}
+
+            {% endblock %}
+        </div>
+    </div>
+</section>

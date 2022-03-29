@@ -1,0 +1,24 @@
+{% extends 'company/company_layout.html' %}
+{% load static %}
+{% block body %} 
+<table class="table">
+    <tr>
+        <th>Name :</th>
+        <th>Email :</th>
+        <th>Mobile :</th>
+        <th>Signation :</th>
+        <th>Branch :</th>
+        <th>Rank :</th>
+    </tr>
+    {% for employee in employees %}
+    <tr>
+        <td>{{employee.name}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.modile}}</td>
+        <td>{{employee.signation}}</td>
+        <td>{{employee.branch}}</td>
+        <td>{{employee.rank}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

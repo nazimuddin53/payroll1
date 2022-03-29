@@ -1,0 +1,28 @@
+{% extends 'company/company_layout.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block body %} 
+
+<div class="contain">
+    <div id="employee">
+    <form action="#" method="post">
+        {% csrf_token %}
+        <div class="input"><b> Name: </b>{{ form.name }}</div>
+        <div class="input"><b>Email: </b>{{ form.email}}</div>
+        <div class="input"><b> Address: </b>{{ form.address }}</div>
+        <div class="input"><b>City: </b>{{ form.city }}</div>
+        <div class="input"><b>Postal Code:</b> {{ form.postalcode }}</div>
+        <div class="input"><b>Modile: </b>{{ form.modile }}</div>
+        <div class="input"><b>Signation: </b>{{ form.signation }}</div>
+        <div class="input"><b>Branch: </b>{{ form.branch }}</div>
+        <div class="input"><b>Rank: </b>{{ form.rank }}</div>
+        <div class="input"><b>Basic Pay:</b> {{ form.basic_pay }}</div>
+        <div class="input"><b>Bank Account: </b>{{ form.bank_account}}</div>
+
+
+        
+        <input type="submit" value= "Add Employee">
+    </form>
+</div>
+</div>
+{% endblock %}

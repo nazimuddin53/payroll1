@@ -1,0 +1,159 @@
+.colam {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    text-align: center;
+}
+.navigation {
+    margin-bottom: 7px;
+        border-bottom: 1px solid blue;
+        position: fixed;
+}
+.navimenu {
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+ 
+}
+.unouder {
+    float: left;
+    width: 75%;
+}
+.unouder ul {
+    list-style-type: none;
+
+}
+.unouder ul li{
+    float : left;
+    width : max-content;
+    padding: 5px;
+    margin: 10px;
+}
+.unouder ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.unouder ul li::after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: green;
+    margin: auto;
+    transition: .3s;
+    display:block;
+    
+}
+.unouder ul li:hover::after{
+    width: 100%;
+
+    
+}
+.ouder{
+    float: right;
+    width: 23%;
+    padding: 7px;
+    text-align: center;
+    margin-top: 5px;
+    height: auto;
+    position: relative;
+
+}
+.ouder ol{
+    list-style-type: none;
+
+}
+
+.ouder ol li a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(51, 48, 233);
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* main section */
+#block-1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    
+    
+}
+.contner{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.text{
+    padding-top: 10%;
+    padding-left: 30%;
+
+}
+.text h1{
+    color: white;
+    font-weight: bold;
+    font-size: 43px; 
+    width: 600px;   
+}
+.text p{
+    width: 600px;
+    font-size: small;
+    color: rgb(0, 0, 0);
+}
+.text button{
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 50px 50px;
+}
+.text button a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+#block-2{
+    background-color: white;
+    height: auto;
+    display:block;
+
+}
+
+#block-2 ol ,#block-2 ul{
+    list-style:none;
+    width: 600px;
+    float: left;
+    
+}
+#block-2 ul li::before, #block-2 ol li::before{
+    content: '\2022';
+    color: green;
+    padding: 6px;
+    font-size: 34px;
+}
+#block-2 ul li, #block-2 ol li{
+    height: 43px;
+    padding: 10px;
+    margin-top: 10px;
+    line-height: 26px;
+
+}
+#block-2 .contner{
+    padding: 10px;
+    background-color: white;
+    height: 700px;
+
+
+}
+#block-2 .contner h1{
+    margin-left: 5%;
+    color: navy;
+    padding-bottom: 5%;
+    padding-top: 9%;
+
+}
